@@ -1,0 +1,435 @@
+CHECKPOINT AT 1:33:40/3:28:42
+CHECKPOINT AT 2:33:30/3:28:42
+CHECKPOINT AT 2:47:28/3:28:42
+
+Part 1: Assigning variables
+Part 2: Initializing Variables w/Assignment operator
+Part 3: Uninitialized Variables
+Part 4: Case Sensitivity in Variables
+Part 5: Adding Numbers, Subtracting Numbers, Multiplying Numbers, Dividing Numbers, Incrementing Numbers++, Decrementing Numbers--, Decimal Numbers(float), Multiply Decimals, Divide Decimals, Finding a Remainder (%)
+Part 6: Compound Assignment with Augmented Addition/Subtraction 
+Part 7: Escape Characters in Strings( \ ' ` )
+Part 8: Escape Sequences in Strings: 
+\'
+\"
+\\
+\n
+\r (carriage return)
+\t
+\b ackspace
+\f (form feed)
+
+Part 9: Concatenating Strings with Plug Operator "+" with plug equals operator "+="
+var a = "I come first.";
+a += "I come second";
+
+Part 10: Construct Strings with Variables
+Part 11: Appending Variables to Strings
+Part 12: String length test.length
+Part 13: Bracket Notation to Find First Characters in String test[0] of seek is "s"
+Part 14: String Immutability. You can't change string literals
+Part 15: Bracket Notation to Find Nth Character in String [n]
+Part 16: Last Letter (test.length - 1)
+Part 17: Word Blanks function(..,..,..) {return}
+Part 18: Store Multiple Values with Arrays array = [23, "qwen"]
+Part 19: Multi-dimensional Array 
+multi = [[], []]
+Part 20: Access Array Data with Indexes
+Part 21: Modify Array Data with Indexes
+Part 22: Access Multi-dimensional Array with Indexes
+Part 23: Manipulate Arrays with push()
+var theArray = [[67, 25, 37], [780, 267, 188]];
+theArray.push(["Jason", "Queen"]);
+var theData = theArray[2][1];
+
+BASICALLY ADD ARRAY
+
+Part 24: Remove an Array with pop()
+REMOVES THE LAST ITEM/ELEMENT
+
+Lart 25: Manipulate Arrays with shift()
+REMOVES THE FIRST ELEMENT INSTEAD OFT EH LAST
+
+Part 26: Add An Element with unshift()
+ADDS AN ELEMENT AT THE FIRST
+
+
+Part 27: Shopping List with Mutli-dimensional Arrays
+
+Part 28: Write Reusable Code with Functions
+Part 29: Passing Values to  Functions with Arguments
+
+Part 30: Global Scope (can be seen everwhere in the JS code) with Functions. Enforcement of var with Scrimba excluding non-var global scope variables.
+Part 31: Local Scope and Functions
+Part 32: Return a Value of a Function with return
+Part 33: Assignment with a Return Value
+Part 34: Stand in Line
+Part 35: Comparison with the Strict Equality Operator ("===") not == , Practice Comparing DIFFERENT Values
+3 == 3 ✓
+3 == '3' ✓
+3 === 3 ✓
+3 === '3' ×
+
+Part 36: Comparison with the Equality/Inequality Operator
+Part 37: Strict Inequality Operator "!=="
+Part 38: Comparisons with The Logical Operators >, <, <=, >=
+
+Part 39: Checking Values with Other Logical Support Operators
+LOGICAL AND "&&"
+LOGICAL OR "||"
+
+Part 40: Else If Statements from ifs and elses. Chaining "if else" statements
+
+Part 41: Switch Statements
+var test = "";
+switch(test) {
+  case 1:
+    break;
+  case 2:
+}
+
+Part 42: Returning true false statements with functions
+Part 43: Returning Early Pattern from Function
+Part 44: COUNTING CARDS
+Part 45: BUILD JAVASCRIPT OBJECTS
+Instead of index to access data, you use properties.
+var ourDog = { 
+  "name": "camp",
+  "legs": 4,
+  "friends": ["everything"]
+}
+
+Part 46: Accessing Object Properties with Dot Notation. "ourDog.name"
+Part 47: Accessing Object Properties with Bracket Notation. Required if property has space in it.
+var ourDog = { 
+  "the name": "camp",
+  "the legs": 4,
+  "the friends": ["everything"]
+}
+
+ourDog["the name"];
+
+Part 48: Accessing Object Properties using Variables
+
+Part 49: Add New Properties to an Object
+test.
+test['bark'] = woof;
+
+Part 50: Delete the Property with "delete"
+delete test.bark;
+
+Part 51: Object System as a Dictionary like Switch
+Part 52: Testing Objects for Properties
+var myObj = {
+  gift: "pony",
+  pet: "kitten"
+}
+
+function checkObj(checkProp) {
+  if (myObj.hasOwnProperty(checkProp)) {
+    return myObj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+
+
+Part 53: Manipulating Complex Objects
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  }
+]
+
+A JS object is a way to store data. This is an example as per storing a context related to music. This system seems nested.
+
+Part 54: ACCESSING NESTED OBJECTS "{}"
+var myStorage = {
+  "car" = {
+    "inside" = {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+    },
+    "outside" = {
+      "trunk" = "jack"
+    }
+  }
+}
+
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
+
+Part 55: ACCESSING NESTED ARRAYS
+"[]"
+var myPlantsStorage = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulips"
+    ]
+  },
+  {
+    type: "fruits",
+    list: [
+      "pineapple",
+      "apple"
+    ]
+  }
+]
+var findMyItem = myPlantsStorage[1].list[1];
+console.log(findMyItem);
+
+
+Part 56: RECORD COLLECTION
+var collection = {
+  "2548": {
+    "album": "Slippery When Wet",
+    "artist": "Bon Javi",
+    "tracks": [
+      "Let It Rock",
+      "You Give Love a Bad Name"
+    ]
+  },
+  "2468": {
+    "album": "1999",
+    "artist": "Prince",
+    "tracks": [
+      "1999",
+      "Little Red Corvette"
+    ]
+  },
+  "1245": {
+    "artist": "Robert Palmer",
+    "tracks": []
+  },
+  "5439": {
+    "artist": ""
+  }
+}
+//Keep a copy of the collection for tests
+var collectionCopy = JSON.parse(JSON.stringify(collection));
+
+function updateRecords(id, prop, value) {
+  if (value === "") {
+    delete collection[id][prop];
+  } else if (prop === "tracks") {
+    collection[id][prop] = collection[id][prop] || [];
+    collection[id][prop].push(value);
+  } else {
+    collection[id][prop] = value;
+  }
+  return collection;
+}
+
+updateRecords(2468, "tracks", "test");
+console.log(updateRecords(5439, "artist", "ABBA"));
+
+
+Part 57: ITERATE WITH LOOPS (while, for)
+
+
+Part 58: ITERATE ODD NUMBERS WITH "for" LOOP
+Part 59: COUNT BACKWARDS WITH "for" LOOP
+Part 60: Nested "for" Loops
+Part 61: Iterate with "do while" loops
+var 
+
+
+Part 62: PROFILE LOOKUP
+var contacts = [
+  {
+    "firstName": "Jeremy",
+    "lastName": "Doughs",
+    "contactNumber": 08382182,
+    "likes": [
+      "eating pizza", "programming"
+    ]
+  },
+  {
+    "firstName": "James",
+    "lastName": "Triot",
+    "contactNumber": 08736829,
+    "likes": [
+      "working at a pizza factory", "jogging"
+    ]
+  }
+]
+
+function lookupProfile(name, prop) {
+  for (var i = 0; i < contacts.length; i++)
+  {
+    if(contacts[i].firstName === name) {
+      return contacts[i][prop] || "Can't find the property you are looking for."
+    }
+  } return "No contacts found.";
+}
+console.log(lookupProfile("James", "likes"))
+
+
+Part 63: GENERATE RANDOM FRACTIONS
+function randomm() {
+  return Math.random();
+}
+console.log(randomm());
+
+//AND
+
+a = Math.floor(Math.random() * 99999) + "x" + Math.floor(Math.random() * 99999999);
+console.log(a);
+
+Part 64: USE THE "parseInt" Function
+//It takes a string and returns an integer. Returns "NaN" otherwise.
+function converToInteger(str) {
+  return parseInt(str);
+}
+converToInteger("56");
+
+
+Part 65: Use a "parseInt" Function with a Radix
+function convertToInteger(str) {
+  return parseInt(str, 2); //THE NUM 2 IS TYPE FOR BINARY//
+}
+a = convertToInteger("00101");
+console.log(a);
+
+
+Part 66: TRUE/FALSE STATEMENT ":" TERNARY OPERATOR "?"
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+console.log(checkSign(0));
+
+Part 67: DIFFERENCE BETWEEN "var" AND  "let" keywords
+In 2015, it was possible to use "let" and "const".
+
+let: Doesn't let you declare a variable twice
+
+Part 68: Compare Scopes of the var and let keywords
+
+Part 69: Declare a Read Only Variable with the "const" keyword
+function printManyTimes(str) {
+  "use strict";
+
+  const sentence = str + " is cool!";
+  sentence = str + " is amazing!";
+  for(var i = 0; i < str.length; i += 2) {
+    console.log(sentence);
+  }
+}
+printManyTimes("freeCodeCamp");
+
+
+Part 70: Mutate an Array Declared with "const"
+const s = [5, 7, 2];
+function editInPlace() {
+  "use strict";
+  //s = [5, 2, 7];
+  s[0] = 2;
+  s[1] = 5;
+  s[2] = 7;
+}
+editInPlace();
+console.log(s);
+
+
+Part 71: PREVENT OBJECT MUTATION
+function freezeObj() {
+  "use strict";
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  Object.freeze(MATH_CONSTANTS);
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch( ex ) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+console.log(PI);
+
+Part 72: USE "ARROW FUNCTIONS" TO WRITE CONCISE "ANONYMOUS FUNCTIONS"
+var magic = () => new Date();
+//SAME THING AS:
+var nmagic = function() {
+return new Date();
+}
+
+//ANOTHER EXAMPLE:
+
+var greet = () => console.log("HELLO WORLD");
+greet();
+
+Part 73: WRITE ARROW FUNCTIONS WITH PARAMETERS
+var myConcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myConcat([1,2],[3,4,5]));
+
+
+
+Part 74: WRITE HIGHER ORDER ARROW FUNCTIONS
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+const squareList = (arr) => {
+  const squaredIntegers = arr.filter(num => Number.isIbteger(num) && num > 0);
+  return squaredIntegers;
+};
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+
+
+Part 75: SECOND PART OF WRITE HIGHER ORDER ARROW FUNCTIONS
+Part 76:
+Part 77:
+Part 78:
+Part 79:
+Part 80:
+Part 81:
+Part 82:
+Part 83:
+Part 84:
+Part 85:
+Part 86:
+Part 87:
+Part 88:
+Part 89:
+Part 90:
+Part 91:
+Part 92:
+Part 93:
+Part 94:
+Part 95:
+Part 96:
+Part 97:
+Part 98:
+Part 99:
+Part 100:
+
+Data types:
+
+undefined : hasn't been set to anything yet
+
+null : this is "nothing"
+boolean
+
+string 
+
+symbol : Immutable primitive value that is unique 
+
+number 
+
+object : can store a lot of key value pairs
+
+
+
+Variables: Can be set to other datatypes later.
