@@ -2,7 +2,7 @@
 
 My personal notes, exercises, and code while following the **Learn JavaScript – Full Course for Beginners** by freeCodeCamp.org.
 
-## 📚 Course Information
+## Course Information
 
 - **Course:** Learn JavaScript – Full Course for Beginners
 - **Instructor:** Beau Carnes
@@ -12,7 +12,7 @@ My personal notes, exercises, and code while following the **Learn JavaScript �
 
 ---
 
-# 🎯 Objectives
+# Objectives
 
 - Learn JavaScript syntax
 - Understand programming fundamentals
@@ -22,22 +22,7 @@ My personal notes, exercises, and code while following the **Learn JavaScript �
 
 ---
 
-# 📁 Project Structure
-
-```
-JavaScript-Beginners/
-│
-├── README.md
-├── Notes/
-├── Exercises/
-├── Challenges/
-├── Practice/
-└── Mini-Projects/
-```
-
----
-
-# 📖 Topics Covered
+# Topics Covered
 
 ## 1. Introduction
 - What is JavaScript?
@@ -109,7 +94,7 @@ JavaScript-Beginners/
 
 ---
 
-# 💻 Practice Goals
+# Practice Goals
 
 - Rewrite every example without looking.
 - Solve the coding challenges.
@@ -118,7 +103,7 @@ JavaScript-Beginners/
 
 ---
 
-# 📚 Resources
+# Resources
 
 - MDN Web Docs
 - JavaScript.info
@@ -126,7 +111,7 @@ JavaScript-Beginners/
 
 ---
 
-# ✅ Progress Tracker
+# Progress Tracker
 
 - [ ] Introduction
 - [ ] Variables
@@ -143,7 +128,7 @@ JavaScript-Beginners/
 
 ---
 
-# 📝 Notes
+# Notes
 
 Write important discoveries here.
 
@@ -156,16 +141,6 @@ Example:
 
 ---
 
-# 🚀 Mini Projects
-
-- Number Guessing Game
-- Calculator
-- Shopping Cart
-- Temperature Converter
-- Basic To-do List
-
----
-
-# 📜 License
+# License
 
 This repository contains my personal notes and practice while following the freeCodeCamp course. All original course content belongs to freeCodeCamp.org.
