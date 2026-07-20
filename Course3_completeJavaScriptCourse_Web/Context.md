@@ -2,7 +2,7 @@
 
 My personal notes, code, and exercises while following the **JavaScript Tutorial Full Course – Beginner to Pro** by SuperSimpleDev.
 
-## 📚 Course Information
+## Course Information
 
 - **Course:** JavaScript Tutorial Full Course - Beginner to Pro
 - **Instructor:** SuperSimpleDev
@@ -13,7 +13,7 @@ This course teaches modern JavaScript from beginner fundamentals to advanced con
 
 ---
 
-# 🎯 Goals
+# Goals
 
 - Learn JavaScript from scratch
 - Understand how JavaScript works
@@ -23,22 +23,7 @@ This course teaches modern JavaScript from beginner fundamentals to advanced con
 
 ---
 
-# 📁 Repository Structure
-
-```
-JavaScript-Course/
-│
-├── README.md
-├── Notes/
-├── Exercises/
-├── Projects/
-├── Practice/
-└── Resources/
-```
-
----
-
-# 📖 Course Progress
+# Course Progress
 
 - [ ] Introduction
 - [ ] JavaScript Basics
@@ -67,7 +52,7 @@ JavaScript-Course/
 
 ---
 
-# 📝 What I'm Learning
+# What I'm Learning
 
 ## JavaScript Basics
 - Syntax
