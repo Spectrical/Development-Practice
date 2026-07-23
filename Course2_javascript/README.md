@@ -1,6 +1,7 @@
 # JavaScript Course2 MARKED COMPLETE
 
-Personal notes from a JavaScript fundamentals course (freeCodeCamp).
+Personal notes from a JavaScript fundamentals course (freeCodeCamp) https://m.youtube.com/watch?v=PkZNo7MFNFg&t=250s&pp=ygUaZnJlZWNvZGVjYW1wIGphdmFzY3JpcHQgM2g%3D.
+![Courseware reference image of the course thumbnail](./images/src.png)
 
 **Video checkpoints (total length 3:28:42):**
 - 1:33:40
