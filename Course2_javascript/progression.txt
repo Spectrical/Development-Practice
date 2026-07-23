@@ -3,6 +3,7 @@ CHECKPOINT AT 2:33:30/3:28:42
 CHECKPOINT AT 2:47:28/3:28:42
 CHECKPOINT AT 2:55:32/3:28:42
 CHECKPOINT AT 3:07:19/3:28:42
+try
 
 Part 1: Assigning variables
 Part 2: Initializing Variables w/Assignment operator
