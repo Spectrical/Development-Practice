@@ -1,4 +1,4 @@
-# JavaScript Course Notes
+# JavaScript Course2 MARKED COMPLETE
 
 Personal notes from a JavaScript fundamentals course (freeCodeCamp-style curriculum).
 
