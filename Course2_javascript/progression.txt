@@ -1,6 +1,8 @@
 CHECKPOINT AT 1:33:40/3:28:42
 CHECKPOINT AT 2:33:30/3:28:42
 CHECKPOINT AT 2:47:28/3:28:42
+CHECKPOINT AT 2:55:32/3:28:42
+CHECKPOINT AT 3:07:19/3:28:42
 
 Part 1: Assigning variables
 Part 2: Initializing Variables w/Assignment operator
@@ -388,18 +390,260 @@ console.log(squaredIntegers);
 
 
 
-Part 75: SECOND PART OF WRITE HIGHER ORDER ARROW FUNCTIONS
-Part 76:
-Part 77:
-Part 78:
-Part 79:
-Part 80:
-Part 81:
-Part 82:
-Part 83:
-Part 84:
-Part 85:
-Part 86:
+Part 75: SECOND PART OF WRITE HIGHER ORDER ARROW FUNCTIONS. DEFAULT PARAMETERS aka IMMEDIATELY INVOKED FUNCTION EXPRESSION (IIFE)
+
+const increment = (function() {
+  return function increment(number, value = 1) {
+    return number + value;
+  }
+})();
+console.log(increment(5,2));
+console.log(increment(5));
+
+
+
+Part 76: Use the Rest Operator with Function Parameters. INTRODUCING "reduce()"
+const sum = (function() {
+  return function sum(x, y, z, a, b, c) {
+    const args = [x, y, z, a, b, c];
+    return args.reduce((a, b) => a + b, 0);
+  };
+})();
+console.log(sum(1, 2, 3, 4, 5, 6));
+
+// INTRODUCTION OF "..." aka "Rest" OPERATOR
+
+const sum = (function() {
+  return function sum(...args) {
+    return args.reduce((a, b) => a + b, 0);
+  };
+})();
+console.log(sum(1, 2, 3, 4, 5, 6));
+
+
+
+Part 77: Use the Spread Operator to Evaluate Arrays In-Place SAME LOOK AS "Rest"
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function() {
+  arr2 = [...arr1]; //EXPAND
+  arr1[0] = 'potato'
+})();
+console.log(arr1);
+console.log(arr2);
+
+
+Part 78: Use Destructuring Assignment to Assign Variables from Objects
+
+var voxel = {x: 3.6, y: 7.4, z:6.54};
+
+var x = voxel.x;
+var y = voxel.y;
+var z = voxel.z;
+
+const { x : a, y : b, z : c } = voxel;
+
+const AVE_TEMPERATURES = {
+  today: 77.5,
+  tomorrow: 79
+}
+
+function getTempOfTmrw(aveTemp) {
+  "use strict";
+  const { tomorrow : tempOfTmrw } = aveTemp;
+  return tempOfTmrw;
+}
+console.log(getTempOfTmrw(AVE_TEMPERATURES));
+
+
+
+Part 79: Destructuring Assignment with Nested Objects
+
+const LOCAL_FORECAST = {
+  today: { min: 72, max: 83 },
+  tomorrow: { min: 73.3, max: 84.6}
+};
+
+function getMaxOfTmrw(forecast) {
+  "use strict";
+
+  const { tomorrow : { max : maxOfTomorrow }} = forecast;
+
+  return maxOfTomorrow;
+}
+
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+
+Part 80: Use Destructuring Assignment to Assign Variables from Arrays
+const [z, x, , y] = [1, 2, 3, 4, 5, 6];
+console.log(z, x, y);
+
+//another example
+let a = 8, b = 6;
+(() => {
+  "use strict";
+  [a, b] = [b, a]
+})();
+console.log(a);
+console.log(b);
+
+
+Part 81: Use Destructuring Assignment with the Rest Operator
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function removeFirstTwo(list) {
+  const [ , , ...arr] = list;
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(arr);
+console.log(source);
+
+
+Part 82: USE DESTRUCTURING ASSIGNMENT TO PASS AN OBJECT AS A FUNCTION'S PARAMETERS
+
+const stats = {
+  max: 56.78,
+  standard_dediation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+const half = (function() {
+  return function half(stats) {
+    return (stats.max + stats.min) / 2.0;
+  };
+})();
+console.log(stats);
+console.log(half(stats));
+
+//COMPARE 
+
+const stats = {
+  max: 56.78,
+  standard_dediation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+const half = (function() {
+  return function half({ max, min }) {
+    return (max + min) / 2.0;//SHORTCUT
+  };
+})();
+console.log(stats);
+console.log(half(stats));
+
+
+Part 83: CREATE STRINGS USING TEMPLATE LITERALS ``
+Allows next line break shortcut
+Reference by ${person.name}
+const person = {
+  name: "Zodiac Hasbro",
+  age: 56
+};
+
+//Template literal with multi-line and string interpolation
+
+//EXAMPLE 1
+
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+
+console.log(greeting);
+
+
+//EXAMPLE 2
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["id-blacklist", "no-dup-keys"]
+};
+function makeList(arr) {
+  const resultDisplayArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
+  return resultDisplayArray;
+}
+/**
+* makeList(result.failure) should return;
+* [ `<li class="text-warning">no-var</li>`,
+*   `<li class="text-warning">var-on-top</li>`
+*   `<li class="text-warning">line-break</li>` ]
+**/
+const resultDisplayArray = makeList(result.failure);
+console.log(resultDisplayArray);
+
+
+
+Part 84: Write Concise Object Literal Declarations Using Simple Fields
+
+const createPerson = (name, age, gender) => ( { name, age, gender } );
+console.log(createPerson("Zodiac Hasbro", 56, "male"));
+
+
+Part 85: Write Concise Declarative Functions
+
+//object can contain a function
+const bicycle = {
+  gear: 2,
+  setGear: function(newGear) {
+    "use strict";
+    this.gear = newGear;
+  }
+};
+
+bicycle.setGear(3);
+console.log(bicycle.gear);
+//output is 3
+
+//THE SIMPLER WAY
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    "use strict";
+    this.gear = newGear;
+  }
+};
+
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+
+
+Part 86: Use "class" Syntax to Define a Constructor Function
+// As substitute, class keyword usage
+
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetPlanet);
+
+// the older way to create an object is by using the "new" keyword
+
+function makeClass() {
+  class Vegetable{
+    constructor(name){
+      this.name = name;
+    }
+  }
+  return Vegetable;
+}
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+
+
 Part 87:
 Part 88:
 Part 89:
